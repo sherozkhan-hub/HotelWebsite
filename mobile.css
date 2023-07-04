@@ -1,0 +1,48 @@
+#navbar h1{
+  float: none;
+  text-align: center;
+
+}
+
+#navbar ul, #navbar ul li{
+  float: none;
+}
+
+#navbar ul li a{
+  padding: 10px;
+  border-bottom: #444 dotted 1px;
+}
+
+#home-info .info-img{
+  display: none;
+} 
+
+.info-content{
+  float: none;
+  width: 100%;
+}
+
+.box{
+  float: none;
+  width: 100%;
+}
+
+/* About Page */
+
+.info-left, .info-right{
+  float: none;
+  width: 100%;
+}
+
+#testimonials{
+  height: 100%;
+}
+
+#testimonials .testimonials{
+  padding: 20px;
+}
+
+#features .box{
+  border-bottom: 1px #fff dotted;
+}
+

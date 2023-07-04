@@ -1,269 +1,270 @@
+/* reset */
+
 *{
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 html,body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height:1.4em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height:1.7em;
 }
 
 a{
+  color:#333;
   text-decoration:none;
-  color:#333
 }
 
-h1, h2, h3{
-  padding:20px
+h1,h2,h3{
+  padding-bottom:20px;
 }
 
-
-/* Utility classes */
-
+p{
+  margin:10px 0;
+}
+/* Utility Classes */
 .container{
-  max-width: 1100px;
   margin:auto;
+  max-width:1100px;
   overflow: auto;
-  padding: 0 20px;
+  padding:0 20px
 }
 
 .primary-word{
-  color:orange;
+  color:#f7c08a;
+}
+
+.lead{
+  font-size:20px;
 }
 
 .btn{
+  display:inline-block;
+  font-size:18px;
+  padding:13px 20px;
   color:white;
-  font-size:15px;
-  padding:20px;
   background-color:#333;
-  border:1px #444 solid;
-  border-radius:5px;
+  border:none;
+  border-radius:6px;
 }
 
 .btn:hover{
-  color:orange;
+  background-color:#f7c08a;
+  color:#333;
+}
+
+.btn-light{
+  background-color: #f4f4f4;
+  color:#333;
+}
+
+.bg-norm{
+  background-color: darkgrey;
 }
 
 .bg-dark{
   background-color:#333;
-  color:lightcoral
+  color:#fff;
 }
+
 .bg-light{
-  background-color:#fff;
-  columns: #333333;
+  background-color:#f7c08a;
+  color:#333;
 }
+
 .bg-primary{
-  background-color:lightcoral;
-  color:#fff
+  background-color:#fff;
+  color:#333;
 }
-
-.l-head{ font-size:40px}
-.s-head{ font-size:30px}
-
-.p-size{ font-size:20px;}
 
 .clr{
   clear: both;
 }
 
-/* Navbar settings */
-.navbar{
-  background-color: #333;
-  color:#fff;
+.py-1{ padding:10px 0}
+.py-2{ padding:20px 0}
+.py-3{ padding:30px 0}
+
+.hea2{ font-size:40px}
+.hea3{ font-size:30px}
+.big-p{ font-size:20px}
+
+.btn:hover{
+  cursor: pointer;
+}
+/* navbar */
+#navbar{
+  background-color:#333;
+  color:white;
   overflow:auto;
 }
 
-.navbar h1{
+#navbar a{
+  color:white;
+}
+
+#navbar h1{
   float:left;
   padding-top:20px;
 }
 
-.navbar ul{
-  float:right;
+#navbar ul{
   list-style: none;
-  
+  float:right;
 }
 
-.navbar ul li{
+#navbar ul li{
   float:left;
 }
 
-.navbar ul li a{
-  display: block;
+#navbar ul li a{
+  display:block;
   padding:20px;
-  color:#fff;
+  text-align:center;
 }
 
-.navbar ul li a:hover{
-  background-color: #444;
-  color: orange;
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background-color:#444;
+  color: #f7c08a;
 }
 
-/* Showcase */
+/* showcase */
 
 #showcase{
-  background: url(showcase.jpg) no-repeat
+  background: url('showcase.jpg') no-repeat
   center center/cover;
-  height: 600px;
-  overflow: auto;
+  height:600px;
 }
 
-.showcase-content {
-  text-align: center;
+#showcase .showcase-content{
+  color:white;
+  text-align:center;
 }
 
-.showcase-content h2{
-  padding:100px 0;
+#showcase h1{
+  padding-top:170px;
+  font-size:60px;
+  line-height: 1.7em;
 }
 
-.showcase-content p{
-  padding-bottom:100px;
+#showcase .showcase-content p{
+  padding-bottom:20px;
 }
 
-/* Home info */
+/* Home-Info */
 
 #home-info{
-  height:400px;
+  height: 400px;
 }
 
-.info-right{
+#home-info .info-img{
+  float:left;
+  width: 50%;
+  background: url(photo-1.jpg) no-repeat;
+  min-height:100%;
+}
+
+.info-content{
   float:right;
+  text-align: center;
   width:50%;
-  text-align:center;
-  height: 100%;
-  padding: 20px 30px;
+  height:100%;
+  padding:50px 30px;
+  overflow:hidden;
 }
 
-.info-right p{
+.info-content p{
   padding-bottom:30px;
 }
+
+.box{
+  float:left;
+  width:33.3%;
+  text-align:center;
+  padding:50px;
+}
+
+/* AbOUT PAGE */
 
 .info-left{
   float:left;
   width:50%;
+  height:100%;
+}
+
+/* .info-left img{
+  width:70%;
+} */
+
+.info-right{
+  float:right;
+  width:50%;
+  min-height:100%;
+}
+
+.info-right img{
+  display: block;
   margin:auto;
-  background: url(photo-1.jpg) no-repeat;
-  min-height: 100%;
- }
-
- /* Features */
-
- .box{
-   float:left;
-   width:33.3%;
-   text-align:center;
-    padding:20px;
- }
-
- .box p{
-   padding:30px;
- }
-
- /* About Page */
-
- #about-main{
-   height:400px;
-   margin-bottom: 5px;
- }
-
- .right-about img{
   width:70%;
   border-radius: 50%;
- }
+}
 
- .right-about{
-   float:right;
-   width:50%;
-   height:100%;
- }
+#main-footer{
+  text-align:center;
+  background-color:#444;
+  color:#fff;
+  padding:2px;
+}
 
- .left-about{
-   float:left;
-   width:50%;
-   height: 100%;
-   text-align: center;
-   line-height: 1.4em;
-   padding: 20px 20px;
- }
+/* Testimonials */
 
- /* Testimonials Setting */
+#testimonials{
+  height:600px;
+  background: url(photo-1.jpg) no-repeat
+  center center/cover;
+  padding:20px 0;
+  opacity: 0.9;
+}
 
- #testimonials{
-   background: url(test-bg.jpg) no-repeat
-   center center/cover;
-   height:600px;
- }
+#testimonials .testimonials{
+  padding:50px;
+  margin-bottom:20px;
+  border-radius:5px;
+  opacity: 0.9;
+}
 
- #testimonials h2{
-   text-align: center;
-   color: white;
-   padding-top:50px ;
- }
+#testimonials .testimonials img{
+  width:100px;
+  float:left;
+  margin-right:10px;
+  border-radius:50%;
+}
 
- .testimonial img{
-   height:100px;
-   float:left;
-   border-radius: 50%;
- }
+#testimonials h2{
+  color: #fff;
+  text-align: center;
+  padding-bottom:40px;
+}
 
- .testimonial{
-   display: inline-block;
-   background-color: lightcoral;
-   margin:50px 200px;
-   padding:30px;
-   border-radius:10px;
- }
+/* Contact Page */
 
- .testimonial p{
-   padding-left:10px;
-   text-align: center;
- }
-
- /* Contact Page */
-
- .contact-head p{
-  margin-bottom: 10px;
- }
- .form-wrap label{
+.form-group label{
   display:block;
-  margin-bottom: 10px;
- }
+}
 
- .form-wrap input{
-   width:100%;
-   padding:10px;
-   margin-bottom: 10px;
-   border: solid #333 1px;
- }
+.form-group input,.form-group textarea{
+  width: 100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px #ddd solid;
+}
 
- .form-wrap textarea{
-   width: 100%;
- }
-
- .form-wrap button{
-   margin-top:20px;
- }
-
- .form-wrap button:hover{
-   background-color: #444;
-   cursor: pointer;
- }
-
- /* Contact Features */
-
-  #contact-features .box{
-   background-color: #333;
- }
-
- 
- /* Footer */
+.form-group button{
+  margin-top:10px;
+}
 
 
- .footer-content{
-   background-color: #444;
-   text-align:center;
-   color:#fff;
-   padding:20px 0;
-   margin:auto;
- }
+
+
